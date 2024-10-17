@@ -1,14 +1,15 @@
-#include <stdio.h>
+#include "libft.h"
 
-int ft_strlen(char *len)
+size_t	ft_strlen(const char *s)
 {
-	int i = 0;
-	while(len[i])
+	size_t i = 0;
+	while(s[i])
 		i++;
 	return (i);
 }
+/*
 int main()
 {
-	printf("cheh = %d \n", ft_strlen("hahaha"));
+	printf("cheh = %ld \n", ft_strlen("hahaha"));
 	return 0;
-}
+}*/
