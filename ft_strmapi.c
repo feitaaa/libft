@@ -1,35 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/16 01:31:22 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/17 21:17:16 by mcastrat         ###   ########.fr       */
+/*   Created: 2024/10/18 18:15:08 by mcastrat          #+#    #+#             */
+/*   Updated: 2024/10/18 18:20:36 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
-int ft_strncmp(const char *s1, const char *s2, size_t n)
-{
-    size_t i;
 
+char *ft_strmapi(const char *s, char (*f)(unsigned int, char))
+{
+    unsigned int i;
+    char *res;
+    
     i = 0;
-    while(s1[i] && s2[i] && i < n)
+    if (s == NULL || f == NULL)
+		return (NULL);
+    res = ft_calloc(ft_strlen(s) + 1, sizeof(char));
+    if(!res)
+        return NULL;
+    while(i < ft_strlen(s))
     {
-        if(s1[i] != s2[i])
-            return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-     i++;
+        res[i] = (*f)(i, s[i]);
+        i++;
     }
-    return (0);
-}
-
-int main()
-{
-    char s1[] = "abcdp";
-    char s2[] = "abcew";
-    printf("%d \n", ft_strncmp(s1, s2, 5));
-    return 0;
+    res[i] = '\0';
+    return res;
 }

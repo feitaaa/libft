@@ -6,11 +6,11 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 03:24:23 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/16 03:42:38 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/17 21:17:35 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 char *ft_strnstr (const char *bigchaine, const char *sschaine, size_t n)
 {

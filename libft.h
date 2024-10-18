@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:48:51 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/16 18:11:40 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/17 21:12:43 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,3 +44,4 @@ char	*ft_strdup(const char *s1);
 // SECOND PART
 char    *ft_substr(const char *s, unsigned int start, size_t len);
 char    *ft_strjoin(const char *s1, const char *s2);
+char	**ft_split(char const *s, char c);

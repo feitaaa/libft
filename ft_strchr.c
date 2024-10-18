@@ -6,11 +6,11 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 00:54:42 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/16 01:30:34 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/17 21:14:55 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *str, int c)
 {
@@ -21,7 +21,7 @@ char	*ft_strchr(const char *str, int c)
 	{
 		while(str[i])
             i++;
-		return ((char *)str + i+1);
+		return ((char *)str + i +1 );
 	}
 	while (str[i])
 	{
