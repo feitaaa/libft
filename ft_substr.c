@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:51:05 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 02:02:50 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 10:00:59 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,10 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	}
 	return (str);
 }
-/*
+/*calc la 's' puis adapter la len envoyer si besoin est sinon alloc
+la mem avc la taille envoyer et '\0' puis tant que on est pas a cette
+taille mettre dans l espace memoire allouer la 's' et la ou elle va
+debuter en ajoutant le nbr de char jusqu a la taille fixe
 int main()
 {
     printf("%s \n", ft_substr("salut, bg", 3, 4));

@@ -12,7 +12,7 @@ int ft_lstsize(t_list *lst)
 	}
 	return (i);
 }
-/*
+/*taille du nbr de maillon
 int main()
 {
 	t_list *m1 = ft_lstnew("nm");

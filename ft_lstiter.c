@@ -10,4 +10,4 @@ void	ft_lstiter(t_list *lst, void (*f)(void *f))
 		f(tmp->content);
 		tmp = tmp->next;
 	}
-}
+	/*on applique un fonction a chaque element d une chaine*/

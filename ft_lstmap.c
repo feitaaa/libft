@@ -21,4 +21,5 @@ t_list *ft_lstmap(t_list *lst, void(*f)(void *),void (*del)(void *))
 		lst = lst->next;
 	}
 	return (new);
-}
+}/*on cree une nouvelle list en appliquant une fonction envoyer
+pui si ca foire on clear sinon on fait l operation pour chaque nv mailllonnnn*/

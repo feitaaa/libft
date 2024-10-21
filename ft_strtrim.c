@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 15:27:23 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 03:14:10 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 09:57:21 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,13 @@ char	*ft_strtrim(const char *s1, const char *set)
 	trim[i] = '\0';
 	return (trim);
 }
-/*
+/*on va envoyer le debut et la fin dans une fonction qui va revoyer
+uen erreur donc rien a afficher si elle correspond aux char ban 
+puis va calc le total de l alloc memoire qu elle doit fournir
+vu que si tu soustrais tt ca tu peux facilement capter ce qu il te
+reste dans ta string et on va juste partir de la fin de notre debut et
+le ++ jusqu au debut de notre fin en metant tt dans trim qui est l espace
+cree
 int	main(void)
 {
     char	s1[] = "ababbabbbaaabggbabababa";

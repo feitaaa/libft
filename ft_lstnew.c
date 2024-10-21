@@ -12,7 +12,7 @@ t_list	*ft_lstnew(void *content)
 	return (cc);
 }
 /*
-int main()
+int main()creation de nv maillon
 {
 	t_list *str= ft_lstnew("Hello World");
 	printf("Content = %s \n",(char *)str->content);

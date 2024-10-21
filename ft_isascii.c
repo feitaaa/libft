@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 00:21:43 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 02:06:51 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 09:05:25 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
-/*
+/*lol
 int main()
 {
 	printf("%d \n", ft_isascii('	'));

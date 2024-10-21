@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 01:31:22 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 01:26:27 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 09:49:56 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-/*
+/*cmp avc n taille
 int main()
 {
     char s1[] = "abcdp";

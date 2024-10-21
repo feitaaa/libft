@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 00:54:52 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 03:09:33 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 09:47:20 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
 {
 	size_t	m;
-	size_t	l;
+	size_t	i;
 	size_t	dsize;
 	size_t	ssize;
 	
@@ -28,16 +28,19 @@ size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
 	if (dstsize <= dsize)
 		return (dstsize + ssize);
 	m = dsize;
-	l = 0;
-	while ((m + l) < (dstsize - 1) && src[l])
+	i = 0;
+	while ((m + i) < (dstsize - 1) && src[i])
 	{
-		dest[m + l] = src[l];
-		l++;
+		dest[m + i] = src[i];
+		i++;
 	}
-	dest[m + l] = '\0';
+	dest[m + i] = '\0';
 	return (dsize + ssize);
 }
-/*
+/*calc la taille de dest et src que on stock puis tant que 
+la taille de la dest + ce que on parcour de celle ci est inferieur 
+a la la taille max decider et tant que on a ps atteint la fin de l
+la chaine src
 int main()
 {
 	char a[40] = "bonjour";

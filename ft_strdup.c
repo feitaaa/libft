@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 04:23:29 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 01:06:28 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 09:36:49 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,4 @@ char	*ft_strdup(const char *s1)
 	tab[i] = '\0';
 	return (tab);
 }
+/*va tt simplement copier en memoire la taille d une s et copier dans un tableau le contenue de celle ci*/

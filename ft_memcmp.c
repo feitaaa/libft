@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 03:08:32 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 00:44:38 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 09:24:51 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*
+/*comparer des chaine caster en 'unisgend char' en fonction d une taille donner une fois un charactere non correspondant trouver 
+durant le parcour des 2 chaine grace a notre cmpt on renvoie la difference
 int main()
 {
     printf("%d \n", ft_memcmp("abcf", "abcd",4));

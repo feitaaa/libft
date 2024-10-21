@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 18:24:41 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 03:05:45 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 09:37:34 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,5 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
+/*va applique une fonction envoyer sur charque char d un s tant
+qu elle sera presente gang*/

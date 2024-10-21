@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 01:15:27 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 01:46:06 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 09:54:22 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strchr(const char *str, int c)
 	}
 	return (NULL);
 }
-/*
+/*on va faire la meme que rrchr mais vers la fin
 int main()
 {
     char a[] = "matteo";

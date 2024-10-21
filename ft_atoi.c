@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 03:50:39 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 02:05:34 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 09:02:44 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,9 @@ int	ft_atoi(const char *str)
 		return (result);
 	return (-result);
 }
-/*
+/*skip les white space pui check les signe en modulant 2 a la fin si pos 
+ou pas et pour 
+les chiffre on fait * 10 puis on soustrait la valeur ascii'0'
 int main()
 {
     

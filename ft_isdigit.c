@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 00:22:27 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 02:07:06 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 09:05:31 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-/*
+/*jsp la
 int main()
 {
 	printf("%d \n", ft_isdigit('s'));

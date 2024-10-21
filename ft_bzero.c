@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 00:12:10 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 05:57:04 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 09:03:37 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ void	ft_bzero(void *s, int size)
 		i++;
 	}
 }
-/*
+/*on cast s pour le remple de zero en fonction d une size prcq remplir du vide
+c chaud
 int main()
 {
 	char s[10] = "lelele";

@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 00:46:46 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 02:53:22 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 09:33:48 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,13 @@ void	*ft_memset(void *b, int c, int len)
 	i = 0;
 	while (i < len)
 	{
-		ptr[i] = (unsigend char)c;
+		ptr[i] = (unsigned char)c;
 		i++;
 	}
 	return (b);
 }
-/*
+/*ici on envoie un char dans c qui va graille le rester remplacer en focntion d une taille
+regler depuis la var ptr qui caste la valeur de b
 int main()
 {
 	char str[7] = "coucou";
