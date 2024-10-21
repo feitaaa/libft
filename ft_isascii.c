@@ -1,14 +1,26 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/21 00:21:43 by mcastrat          #+#    #+#             */
+/*   Updated: 2024/10/21 02:06:51 by mcastrat         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int ft_isascii(int c)
+#include "libft.h"
+
+int	ft_isascii(int c)
 {
-	if(c >= 0 && c <= 63)
+	if (c >= 0 && c <= 63)
 		return (1);
 	return (0);
 }
-
+/*
 int main()
 {
 	printf("%d \n", ft_isascii('	'));
 	return (0);
-}
+}*/

@@ -6,14 +6,18 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 17:20:41 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/17 20:51:25 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 01:00:57 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// Fonction pour copier une chaîne dans un tableau, on recoit la chaine, la taille memoire du mot , sa premiere et dernier lettre
-//tant que on a pas ecrit le mot on copier dans la tailler memoire de celui ci en partant de sa premier position(lettre) ect ect
-//et on le renvoie pour le mettre dans le tab qui augmentera de taille en fonction du nombre de mot
+// Fonction pour copier une chaîne dans un tableau, on recoit la chaine,
+// la taille memoire du mot , sa premiere et dernier lettre
+//tant que on a pas ecrit le mot on copier dans la tailler
+// memoire de celui ci en partant de sa premier position(lettre)
+// ect ect
+//et on le renvoie pour le mettre dans le tab qui augmentera de taill
+//e en fonction du nombre de mot
 char	*fill(char const *s, char *mot, int first, int last)
 {
 	size_t	j;
@@ -28,8 +32,10 @@ char	*fill(char const *s, char *mot, int first, int last)
 	mot[j] = '\0';
 	return (mot);
 }
-// Fonction pour liberer de la memoire (free) en fonction de 'n' element dans le tab envoyer (au cas ou l alloc foire)
-void	safefree(char **tab, size_t n) 
+
+// Fonction pour liberer de la memoire (free) en fonction de 'n' 
+// element dans le tab envoyer (au cas ou l alloc foire)
+void	safefree(char **tab, size_t n)
 {
 	size_t	i;
 
@@ -41,9 +47,13 @@ void	safefree(char **tab, size_t n)
 	}
 	free(tab);
 }
-// Fonction qui capte le debut et la fin d un mot (i et j) pour ensuite allouer de la memoire dans 'mot' avc ft_calloc
-//si l allocation foire faut liberer ^^ et return NULL , puis on copier la chaine dans le tableau grace a i et j(on a le mot)
-//puis on passe au prochain ect et on renvoie le tableau complet une fois que n >= nbr de mot
+
+// Fonction qui capte le debut et la fin d un mot (i et j) pour
+// ensuite allouer de la memoire dans 'mot' avc ft_calloc
+//si l allocation foire faut liberer ^^ et return NULL , pui
+//s on copier la chaine dans le tableau grace a i et j(on a le mot)
+//puis on passe au prochain ect et on renvoie le tableau complet
+//une fois que n >= nbr de mot
 char	**allmot(char **tab, char const *s, char c,
 		size_t motcount)
 {
@@ -61,10 +71,10 @@ char	**allmot(char **tab, char const *s, char c,
 		j = i;
 		while (s[i] && s[i] != c)
 			i++;
-		mot = ft_calloc((i - j) + 1, sizeof(char));// fin - debut = taille du mot
+		mot = ft_calloc((i - j) + 1, sizeof(char));
 		if (!mot)
 		{
-			safefree(tab, n);// Libérer la mémoire et retourner NULL
+			safefree(tab, n);
 			return (NULL);
 		}
 		tab[n] = fill(s, mot, j, i);
@@ -73,8 +83,12 @@ char	**allmot(char **tab, char const *s, char c,
 	tab[n] = '\0';
 	return (tab);
 }
-// Fonction pour compter le nombre de mots dans une chaîne, si la pos est == au separateur on skip jusqu a rencontrer une lettre aka le mot
-//et on continue jusqu a rencontrer un sep et grace a ca on a le nbr de mot que l on renvoie ensuite pour cree de 
+
+// Fonction pour compter le nombre de mots dans une chaîne, 
+// si la pos est == au separateur on skip jusqu a rencontrer une
+// lettre aka le mot
+//et on continue jusqu a rencontrer un sep et grace a ca on a le nbr
+//de mot que l on renvoie ensuite pour cree de 
 //l espace memoire
 size_t	countmot(char const *s, char c)
 {
@@ -94,6 +108,7 @@ size_t	countmot(char const *s, char c)
 	}
 	return (mot);
 }
+
 // Fonction pour spliter une chaîne en un tableau de chaînes
 char	**ft_split(char const *s, char c)
 {
@@ -104,13 +119,13 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	mot = countmot(s, c);
-	tab = ft_calloc(mot + 1, sizeof(char *));// calloc mieux mais pas tres bien compris pourquoi malloc faut des trcu mzi
+	tab = ft_calloc(mot + 1, sizeof(char *));
 	if (!tab)
 		return (NULL);
 	allmot(tab, s, c, mot);
 	return (tab);
 }
-
+/*
 int	main(void)
 {
 	char	**tabarnak;
@@ -123,4 +138,4 @@ int	main(void)
 		i++;
 	}
 	return (0);
-}
+}*/

@@ -1,24 +1,37 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/21 00:34:47 by mcastrat          #+#    #+#             */
+/*   Updated: 2024/10/21 02:55:01 by mcastrat         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void *ft_memcpy(void *dest, const void *src, size_t n)
+#include "libft.h"
+
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	int i;
-	
+	int			i;
+	char		*cdest;
+	const char	*csrc;
 
+	if (!dest || !src)
+		return (NULL);
 	i = 0;
-	
-	char *cdest = dest;
-	const char *csrc = src;
-	while(n > 0)
+	cdest = (unsigned char *)dest;
+	csrc = (const unsigned char *)src;
+	while (i < n)
 	{
 		cdest[i] = csrc[i];
 		i++;
-		n--;
 	}
 	cdest[i] = '\0';
-	return cdest;
+	return (cdest);
 }
-
+/*
 int main()
 {
 	char ye[10];
@@ -26,4 +39,4 @@ int main()
 	ft_memcpy(ye, oo, 3);
 	printf("%s \n", ye);
 	return 0;
-}
+}*/

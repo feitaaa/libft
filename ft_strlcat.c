@@ -6,32 +6,25 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 00:54:52 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/16 00:54:53 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 03:09:33 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
-#include <stdio.h>
-
-size_t ft_strlcat(char *dest, const char *src, size_t dstsize)
+size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
 {
-	size_t i;
-	size_t j;
-	size_t m;
-	size_t l;
-	size_t dsize;
-	size_t ssize;
+	size_t	m;
+	size_t	l;
+	size_t	dsize;
+	size_t	ssize;
 	
-	i = 0;
-	j = 0;
-	while (dest[i])
-		i++;
-	dsize = i;
-	while(src[j])
-		j++;
-	ssize = j;
+	if ((dest == NULL && src == NULL) || (dest == NULL && dstsize == 0))
+		return (0);
+	dsize = ft_strlen(dest);
+	ssize = ft_strlen(src);
 	if (dstsize == 0)
-		return ssize;
+		return (ssize);
 	if (dstsize <= dsize)
 		return (dstsize + ssize);
 	m = dsize;
@@ -41,14 +34,14 @@ size_t ft_strlcat(char *dest, const char *src, size_t dstsize)
 		dest[m + l] = src[l];
 		l++;
 	}
-	dest[m +l] = '\0';
+	dest[m + l] = '\0';
 	return (dsize + ssize);
 }
-
+/*
 int main()
 {
 	char a[40] = "bonjour";
 	char b[40] = "salut";
-	printf("%ld \n", ft_strlcat( a, b, 7));
+	printf("%ld \n", ft_strlcat( a, b, 4));
 	return 0;
-}
+}*/

@@ -1,34 +1,36 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/21 00:46:46 by mcastrat          #+#    #+#             */
+/*   Updated: 2024/10/21 02:53:22 by mcastrat         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void *ft_memset(void *b, int c, int len)
+#include "libft.h"
+
+void	*ft_memset(void *b, int c, int len)
 {
-	int i;
-	
+	size_t				i;
+	unsigned char	*ptr;
+
+	ptr = (unsigned char *)b;
 	i = 0;
-	unsigned char *ptr = b;
-	while(ptr[i])
-		i++;
-	if (len > i)
+	while (i < len)
 	{
-		printf("hayak pas frr max ");
-		return (b);
+		ptr[i] = (unsigend char)c;
+		i++;
 	}
-	i = 0; 
-	while(len > 0)
-	{
-		ptr[i] = c;
-		i++;
-		len--;
-}
 	return (b);
 }
-
-#include <stdio.h>
-
+/*
 int main()
 {
 	char str[7] = "coucou";
 	ft_memset(str,'e',4);
 	printf("%s\n", str);
 	return (0);
-}
+}*/

@@ -6,23 +6,21 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 01:15:27 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/16 01:30:18 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 01:46:06 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *str, int c)
 {
-	int i;
+	int	i;
 
 	i = 0;
-
-    while(str[i])
-        i++;
+	while (str[i])
+		i++;
 	if (c == '\0')
 		return ((char *)str + i + 1);
-        
 	while (i >= 0)
 	{
 		if (str[i] == c)
@@ -31,10 +29,10 @@ char	*ft_strchr(const char *str, int c)
 	}
 	return (NULL);
 }
-
+/*
 int main()
 {
     char a[] = "matteo";
     printf("%s \n", ft_strchr(a, 't'));
     return 0;
-}
+}*/
