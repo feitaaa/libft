@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 18:15:08 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 09:49:39 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 20:49:42 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,8 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	}
 	res[i] = '\0';
 	return (res);
-}/*on alloc mem a la taille de la 's' +\0  puis tant
+}
+/*on alloc mem a la taille de la 's' +\0  puis tant
 que on  pas atteitn la taille de s
 on stock dans la valeur qui correspond a l alloc memoir donc 
 la taille l application de la fonction envoyer sur le char*/

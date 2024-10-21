@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 00:38:10 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 09:31:18 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 21:15:50 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t		i;
-	char		*cd;
-	const char	*cs;
+	size_t				i;
+	unsigned char		*cd;
+	const unsigned char	*cs;
 
 	i = 0;
 	if (!dest || !src)
@@ -36,8 +36,9 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*on va ici si la dest est plus grande que la source la copier depuis la taille donner jusqu a 0 sinon strcpy mais ici la diff 
-c est ca fait belek au chevauchement udada
+/*on va ici si la dest est plus grande que la source la copier
+ *  depuis la taille donner jusqu a 0 sinon strcpy mais ici la
+ *  diff c est ca fait belek au chevauchement udada
 int main(void)
 {
 	char dest1[50] = "TestCarJeComprendsPas";

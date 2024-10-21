@@ -6,28 +6,24 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 01:15:27 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 09:54:22 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 22:32:56 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *str, int c)
+char	*ft_strrchr(const char *str, int c)
 {
 	int	i;
 
 	i = 0;
 	while (str[i])
 		i++;
-	if (c == '\0')
-		return ((char *)str + i + 1);
-	while (i >= 0)
-	{
-		if (str[i] == c)
-			return ((char *)str + i);
+	while (i > 0 && str[i] != (unsigned char)c)
 		i--;
-	}
-	return (NULL);
+	if (!(str[i] == (unsigned char)c))
+		return (NULL);
+	return ((char *)&str[i]);
 }
 /*on va faire la meme que rrchr mais vers la fin
 int main()

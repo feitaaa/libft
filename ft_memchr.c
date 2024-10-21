@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 01:48:25 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 09:22:01 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 20:46:33 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,9 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*cast pour renvoyer en void (pointeur generique)prcq on est dans une void l adresse memoire  a un moment ou le charactere chercher est trouver dans une *s controler 
+/*cast pour renvoyer en void (pointeur generique)prcq 
+ * on est dans une void l adresse memoire  a un moment ou le
+ * charactere chercher est trouver dans une *s controler 
 par une taille n
 int main()
 {

@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 17:20:41 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 01:00:57 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 21:21:33 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ char	**allmot(char **tab, char const *s, char c,
 		tab[n] = fill(s, mot, j, i);
 		n++;
 	}
-	tab[n] = '\0';
+	tab[n] = NULL;
 	return (tab);
 }
 

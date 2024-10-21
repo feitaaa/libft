@@ -6,15 +6,15 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 00:46:46 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 09:33:48 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 21:12:40 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *b, int c, int len)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	size_t				i;
+	size_t			i;
 	unsigned char	*ptr;
 
 	ptr = (unsigned char *)b;
@@ -26,7 +26,8 @@ void	*ft_memset(void *b, int c, int len)
 	}
 	return (b);
 }
-/*ici on envoie un char dans c qui va graille le rester remplacer en focntion d une taille
+/*ici on envoie un char dans c qui va graille le
+ * rester remplacer en focntion d une taille
 regler depuis la var ptr qui caste la valeur de b
 int main()
 {

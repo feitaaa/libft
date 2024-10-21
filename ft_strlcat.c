@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 00:54:52 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 09:47:20 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 20:49:14 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
 	size_t	i;
 	size_t	dsize;
 	size_t	ssize;
-	
+
 	if ((dest == NULL && src == NULL) || (dest == NULL && dstsize == 0))
 		return (0);
 	dsize = ft_strlen(dest);

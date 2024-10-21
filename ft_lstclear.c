@@ -1,16 +1,29 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/21 20:39:07 by mcastrat          #+#    #+#             */
+/*   Updated: 2024/10/21 20:40:01 by mcastrat         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list *tmp;
-	while(*lst)
+	t_list	*tmp;
+
+	while (*lst)
 	{
 		tmp = (*lst)->next;
 		ft_lstdelone(*lst, del);
 		*lst = tmp;
 	}
 	free(*lst);
-	*lst = NULL;
+	*lst = (NULL);
 }
 /*on cree un variable ou on met lst puis tant que '\0' 
 on stock le ptr suivant dans tmp en suppriment 

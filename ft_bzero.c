@@ -6,22 +6,22 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 00:12:10 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 09:03:37 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 21:49:23 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, int size)
+void	ft_bzero(void *s, size_t size)
 {
 	size_t				i;
-	unsigned char	*ptr;
+	unsigned char		*ptr;
 
 	ptr = (unsigned char *)s;
 	i = 0;
 	while (size > i)
 	{
-		ptr[i] = 48;
+		ptr[i] = 0;
 		i++;
 	}
 }

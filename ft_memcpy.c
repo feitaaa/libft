@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 00:34:47 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 09:28:02 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 22:36:12 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t			i;
-	char		*cdest;
-	const char	*csrc;
+	size_t				i;
+	unsigned char		*cdest;
+	const unsigned char	*csrc;
 
 	if (!dest || !src)
 		return (NULL);
@@ -28,10 +28,10 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		cdest[i] = csrc[i];
 		i++;
 	}
-	cdest[i] = '\0';
 	return (cdest);
 }
-/*va simplement copier un src dans une dest en fonction d une n taille et renvoyer la dest
+/*va simplement copier un src dans une dest en fonction
+ * d une n taille et renvoyer la dest
 int main()
 {
 	char ye[10];

@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 04:15:49 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 09:05:12 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 20:37:28 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,9 @@ void	*ft_calloc(size_t count, size_t size)
 	}
 	return (tmp);
 }
-/*alloc de memoir en fonction de 2 arg on cree docn un variable tmp
-qui va bien garder la solution apres un ptit conteur qui decidera quand arrt de mettre
-des zero dans l espace memoire cree et ajuster gang*/
+/*alloc de memoir en fonction de 2 arg on cree
+ * docn un variable tmp
+qui va bien garder la solution apres un ptit conteur 
+qui decidera quand arrt de mettre
+des zero dans l espace memoire cree et ajuster
+gang*/

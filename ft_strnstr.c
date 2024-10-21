@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 03:24:23 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 09:52:23 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/21 20:50:38 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ char	*ft_strnstr(const char *bigchaine, const char *sschaine, size_t n)
 
 	j = 0;
 	i = 0;
-	if ((bigchaine == NULL && sschaine == NULL) || (bigchaine == NULL && n == 0))
+	if ((bigchaine == NULL && sschaine == NULL)
+		|| (bigchaine == NULL && n == 0))
 		return (NULL);
 	if (sschaine[0] == '\0')
 		return ((char *) bigchaine);
