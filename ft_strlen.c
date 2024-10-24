@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 01:22:04 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 01:22:37 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/24 22:25:52 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
 	while (s[i])

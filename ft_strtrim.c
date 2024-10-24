@@ -6,13 +6,13 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 15:27:23 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 09:57:21 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/24 22:26:47 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	totrim(const char *set, char c)
+static int	totrim(const char *set, char c)
 {
 	int	i;
 

@@ -11,12 +11,15 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <time.h>
 
 void	ft_putstr_fd(char *str, int fd)
 {
 	int	i;
 
 	i = 0;
+	if (str == NULL || fd < 0)
+		return ;
 	while (str[i])
 	{
 		write(fd, &str[i], 1);

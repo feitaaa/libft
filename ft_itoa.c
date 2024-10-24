@@ -6,13 +6,13 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 17:02:42 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 20:20:39 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/24 22:19:14 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	len(long nbr)
+static int	len(long nbr)
 {
 	int	i;
 

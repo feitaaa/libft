@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/20 15:43:04 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 00:52:39 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/24 22:21:36 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putendl_fd(char *str, int fd)
 	int	i;
 
 	i = 0;
+	if (!str || fd < 0)
+		return ;
 	while (str[i])
 	{
 		write(fd, &str[i], 1);

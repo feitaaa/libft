@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 17:20:41 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 21:21:33 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/24 22:23:03 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 // ect ect
 //et on le renvoie pour le mettre dans le tab qui augmentera de taill
 //e en fonction du nombre de mot
-char	*fill(char const *s, char *mot, int first, int last)
+static char	*fill(char const *s, char *mot, int first, int last)
 {
 	size_t	j;
 
@@ -35,7 +35,7 @@ char	*fill(char const *s, char *mot, int first, int last)
 
 // Fonction pour liberer de la memoire (free) en fonction de 'n' 
 // element dans le tab envoyer (au cas ou l alloc foire)
-void	safefree(char **tab, size_t n)
+static void	safefree(char **tab, size_t n)
 {
 	size_t	i;
 
@@ -54,7 +54,7 @@ void	safefree(char **tab, size_t n)
 //s on copier la chaine dans le tableau grace a i et j(on a le mot)
 //puis on passe au prochain ect et on renvoie le tableau complet
 //une fois que n >= nbr de mot
-char	**allmot(char **tab, char const *s, char c,
+static char	**allmot(char **tab, char const *s, char c,
 		size_t motcount)
 {
 	size_t	i;
@@ -90,7 +90,7 @@ char	**allmot(char **tab, char const *s, char c,
 //et on continue jusqu a rencontrer un sep et grace a ca on a le nbr
 //de mot que l on renvoie ensuite pour cree de 
 //l espace memoire
-size_t	countmot(char const *s, char c)
+static size_t	countmot(char const *s, char c)
 {
 	size_t	mot;
 	int		i;

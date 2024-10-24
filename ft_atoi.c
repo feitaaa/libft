@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 03:50:39 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 21:59:57 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/24 20:31:52 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,10 @@ int	ft_atoi(const char *str)
 /*skip les white space pui check les signe en modulant 2 a la fin si pos 
 ou pas et pour 
 les chiffre on fait * 10 puis on soustrait la valeur ascii'0'
+
 int main()
 {
     
-    printf("%d \n", ft_atoi("       ---+-783u874neund"));
+    printf("%d \n", ft_atoi("   ---+-783u874neund"));
     return 0;
 }*/
