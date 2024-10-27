@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 00:38:10 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 21:15:50 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/27 17:14:45 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	const unsigned char	*cs;
 
 	i = 0;
-	if (!dest || !src)
+	if (!dest && !src)
 		return (NULL);
 	cd = (unsigned char *)dest;
 	cs = (const unsigned char *)src;

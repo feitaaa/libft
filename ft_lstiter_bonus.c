@@ -6,12 +6,11 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 20:41:11 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 20:41:53 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/27 17:16:34 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <sys/types.h>
 
 void	ft_lstiter(t_list *lst, void (*f)(void *f))
 {

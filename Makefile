@@ -6,7 +6,7 @@
 #    By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/21 02:24:00 by mcastrat          #+#    #+#              #
-#    Updated: 2024/10/21 20:19:52 by mcastrat         ###   ########.fr        #
+#    Updated: 2024/10/27 17:24:56 by mcastrat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,9 +30,9 @@ SRC = ft_isalpha.c ft_isdigit.c \
 	ft_putchar_fd.c ft_putstr_fd.c \
 	ft_putendl_fd.c ft_putnbr_fd.c \
 
-BONUS = ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c \
-		ft_lstdelone.c ft_lstiter.c ft_lstlast.c \
-		ft_lstmap.c ft_lstnew.c ft_lstsize.c
+BONUS = ft_lstadd_back_bonus.c ft_lstadd_front_bonus.c ft_lstclear_bonus.c \
+		ft_lstdelone_bonus.c ft_lstiter_bonus.c ft_lstlast_bonus.c \
+		ft_lstmap_bonus.c ft_lstnew_bonus.c ft_lstsize_bonus.c
 WW = gcc
 CF = -Wall -Wextra -Werror
 RM = rm -f

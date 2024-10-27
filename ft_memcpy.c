@@ -6,7 +6,7 @@
 /*   By: mcastrat <mcastrat@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 00:34:47 by mcastrat          #+#    #+#             */
-/*   Updated: 2024/10/21 22:36:12 by mcastrat         ###   ########.fr       */
+/*   Updated: 2024/10/27 17:10:17 by mcastrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char		*cdest;
 	const unsigned char	*csrc;
 
-	if (!dest || !src)
+	if (!dest && !src)
 		return (NULL);
 	i = 0;
 	cdest = (unsigned char *)dest;
